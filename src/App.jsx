@@ -16,7 +16,7 @@ const App = () => {
       const data = JSON.parse(input).data;
       const nums = data.filter((item) => !isNaN(item));
       const alphas = data.filter((item) => isNaN(item)).sort();
-      const res = await axios.post("https://bfhl-backend-17fk.onrender.com/bfhl", {data});
+      const res = await axios.post("https://bfhl-backend-ad4s.onrender.com/bfhl", {data});
       console.log(res.data)
       setNumbers(nums);
       setHighestAlphabet(alphas[alphas.length - 1] || "");
